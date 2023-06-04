@@ -1,5 +1,5 @@
 const TransactionHistory = props => {
-    console.log(props);
+    // console.log(props);
     const transactions = props.items;
     return (
         <table className="transaction-history">
