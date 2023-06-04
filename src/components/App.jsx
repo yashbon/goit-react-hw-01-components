@@ -1,5 +1,5 @@
 import user from 'data/user';
-import { Profile } from './Profile/Profile';
+import Profile from './Profile/Profile';
 
 import data from 'data/data';
 import Statistics from './Statistics/Statistics';
