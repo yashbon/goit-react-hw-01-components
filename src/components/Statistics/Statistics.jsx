@@ -8,21 +8,7 @@ const Statistics = props => {
             <Title>{title}</Title>
             <StatList>
                 {stats.map(stat => (
-                    // <StatisticsItem
-                    //     id={stat.id}
-                    //     label={stat.label}
-                    //     percentage={stat.percentage}
-                    // />
-                    <StatListItem
-                        {...stat}
-                        key={stat.id}
-                        // label={stat.label}
-                        // percentage={stat.percentage}
-                    />
-                    // <li className="item" key={stat.id}>
-                    //     <span className="label">{stat.label}</span>
-                    //     <span className="percentage">{stat.percentage}%</span>
-                    // </li>
+                    <StatListItem {...stat} key={stat.id} />
                 ))}
             </StatList>
         </Statistic>

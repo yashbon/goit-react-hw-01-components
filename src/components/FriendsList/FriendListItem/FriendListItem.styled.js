@@ -9,7 +9,6 @@ const blink = keyframes`
 `
 
 export const FriendsItem = styled.li`
-    /* width: 100%; */
     list-style: none;
     align-items: center;
     background-color: whitesmoke;
