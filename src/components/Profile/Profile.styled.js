@@ -1,13 +1,13 @@
 import styled from 'styled-components';
 
 export const Card = styled.div`
-background-color: #fff;
-border-radius: 8px;
-box-shadow: 4px 1px 4px rgba(0,0,0,.12),0 4px 4px rgba(0,0,0,.06),1px 4px 6px rgba(0,0,0,.16);
-margin: 40px auto 40px;
-overflow: hidden;
-text-align: center;
-width: 300px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 4px 1px 4px rgba(0,0,0,.12),0 4px 4px rgba(0,0,0,.06),1px 4px 6px rgba(0,0,0,.16);
+    margin: 40px auto 40px;
+    overflow: hidden;
+    text-align: center;
+    width: 300px;
     /* width: 350px;
     margin: 40px auto;
     padding: 0;
