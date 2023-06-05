@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 import { Item, Label, Percentage } from './StatListItem.styled';
-import randomColor from '../randomColor';
+import randomColor from './randomColor';
 
 const StatListItem = props => {
     const { label, percentage } = props;

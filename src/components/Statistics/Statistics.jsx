@@ -6,7 +6,7 @@ const Statistics = props => {
     const { title, stats } = props;
     return (
         <Statistic>
-            <Title>{title}</Title>
+            {title && <Title>{title}</Title>}
             <StatList>
                 {stats.map(stat => (
                     <StatListItem {...stat} key={stat.id} />
@@ -17,7 +17,7 @@ const Statistics = props => {
 };
 
 Statistics.propTypes = {
-    title: PropTypes.string.isRequired,
+    title: PropTypes.string,
     stats: PropTypes.arrayOf(
         PropTypes.shape({ id: PropTypes.string.isRequired })
     ),
