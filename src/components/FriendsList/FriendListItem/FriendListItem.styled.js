@@ -6,6 +6,10 @@ const blink = keyframes`
     transform: scale(1, 1);
     opacity: 0.5;
   }
+  /* 0% {
+    transform: scale(1, 1);
+    opacity: 1;
+  } */
 `
 
 export const FriendsItem = styled.li`
@@ -31,7 +35,7 @@ export const Status = styled.span`
     border-radius: 50%;
     background-color: ${({ isOnLine }) => (isOnLine ? 'green' : 'red')};
 
-    animation: ${blink} 1200ms linear infinite;
+    animation: ${blink} 1500ms cubic-bezier(0.68, -0.55, 0.265, 1.55) infinite;
 `
 
 export const Name = styled.p`

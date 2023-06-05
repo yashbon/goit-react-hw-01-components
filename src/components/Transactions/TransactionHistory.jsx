@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import {
     TableBody,
     TableData,
@@ -21,17 +22,25 @@ const TransactionHistory = props => {
                     </TableRow>
                 </TableHeader>
                 <TableBody>
-                    {transactions.map(transaction => (
-                        <TableRow key={transaction.id}>
-                            <TableData>{transaction.type}</TableData>
-                            <TableData>{transaction.amount}</TableData>
-                            <TableData>{transaction.currency}</TableData>
+                    {transactions.map(({ id, type, amount, currency }) => (
+                        <TableRow key={id}>
+                            <TableData>{type}</TableData>
+                            <TableData>{amount}</TableData>
+                            <TableData>{currency}</TableData>
                         </TableRow>
                     ))}
                 </TableBody>
             </Transactions>
         </TransactionsHistory>
     );
+};
+
+TransactionHistory.propTypes = {
+    transactions: PropTypes.array,
+    // id: PropTypes.string.isRequired,
+    // type: PropTypes.string.isRequired,
+    // amount: PropTypes.string.isRequired,
+    // currency: PropTypes.string.isRequired,
 };
 
 export default TransactionHistory;
